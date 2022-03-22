@@ -1,0 +1,66 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Menu: John Smily's eight challenge from Vanilla JavaScript 15 challenges</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--icon library-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------->
+    <link rel="stylesheet" href="navBar.css" />
+</head>
+<body>
+
+<!--nav bar-->
+<nav class = "nav-bar">
+    <div class = "logo-container">
+        <img id ="logo" src = "logo3.jpg" alt="lettuce">
+        <span style ="color:green"><em><b>An Online Grocery Store</b></em> </span>
+    </div>
+    <br>
+    <a href ="#navbTN" id = "openNavBTN">
+            <i class="fas fa-bars"></i>
+    </a>
+    <a href="#createAccount" id ="sign-in"> SIGN-IN/CREATE ACCOUNT</a>
+    <a href ="#checkout" id ="checkout">
+        <i class="fas fa-shopping-cart"></i>
+    </a>
+    <a href="#location" id = "location">
+        <i class="fas fa-map-marker-alt"></i> STORES
+    </a> 
+    <ul class = "nav-bar-open">
+        <li>ORDER BY: </li>
+        <li><a href = "./order/order.html">
+            <i class="fas fa-shopping-basket"></i> ONLINE
+        </a></li>
+        <li><a href ="tel:+8001234567">
+            <i class="fas fa-phone"></i> (800)123-4567
+        </a></li>
+        <li><a href="mailto:greenstogo@gmail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i> greenstogo@gmail.com
+        </a></li>
+        <li><a href="#chat" onclick ="openChat()">
+            <i class="far fa-comment"></i> CHAT
+            </a></li>
+    </ul>
+</div>
+</nav>
+
+<!--navbar options popup-->
+
+<!--chat box-->
+<div class ="chat-popup" id ="chat">
+    <form action ="/action" class = "form-container">
+        <span class = "closebtn" onclick = "closeChat()">&times;</span><br><br>
+        <label for="msg">Our agent is currently available to take your order.</label><br><br>
+        <textarea placeholder ="Type your message..." name = "msg" required></textarea>
+        <button type ="submit" class ="sendbtn">SEND </button>
+    </form>
+</div>
+
+<script src ="navBar.js"></script>
+</body>
+</html>
